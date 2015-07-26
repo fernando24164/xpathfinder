@@ -3,27 +3,7 @@
 var xpathFinder = (function () {
 
     return {
-
-        checkBrothersNodes: function (node) {
-
-            var answer = '';
-
-            parent = node.parentNode;
-
-            if (parent !== undefined) {
-                lengthChildren = parent.children.length;
-                if (lengthChildren > 0) {
-                    answer = true;
-                } else {
-                    answer = false;
-                }
-            } else {
-                answer = false;
-            }
-
-            return answer;
-        },
-
+	
         getXPath: function (Nodo) {
             var XPath = '';
 
